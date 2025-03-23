@@ -4,7 +4,7 @@
   import Hero from "./lib/hero/Hero.svelte"
   import About from "./lib/about/About.svelte"
   import Services from "./lib/services/Services.svelte"
-  // import Contacts from "./lib/components/contacts/Contacts.svelte"
+  import Contacts from "./lib/contacts/Contacts.svelte"
 
 
   import { onMount, onDestroy } from "svelte"
@@ -35,7 +35,7 @@
   </div>
   <About id="about"/>
   <Services id="services"/>
-  <!-- <Contacts id="contacts"/>  -->
+  <Contacts id="contacts"/> 
 </main>
 
 <style>

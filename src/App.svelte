@@ -3,7 +3,7 @@
   import SecondaryNavBar from "./lib/nav/SecondaryNavBar.svelte"
   import Hero from "./lib/hero/Hero.svelte"
   import About from "./lib/about/About.svelte"
-  // import Services from "./lib/components/services/Services.svelte"
+  import Services from "./lib/services/Services.svelte"
   // import Contacts from "./lib/components/contacts/Contacts.svelte"
 
 
@@ -34,8 +34,8 @@
     <Hero id="home"/>
   </div>
   <About id="about"/>
-  <!-- <Services2 id="services"/>
-  <Contacts id="contacts"/> -->
+  <Services id="services"/>
+  <!-- <Contacts id="contacts"/>  -->
 </main>
 
 <style>

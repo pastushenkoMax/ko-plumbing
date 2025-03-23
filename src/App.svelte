@@ -1,7 +1,7 @@
 <script lang="ts">
   // import NavBar from "./lib/components/nav/NavBar.svelte"
   // import SecondaryNavBar from "./lib/components/nav/SecondaryNavBar.svelte"
-  // import Hero from "./lib/components/hero/Hero.svelte"
+  import Hero from "./lib/hero/Hero.svelte"
   // import About from "./lib/components/about/About.svelte"
   // import Services from "./lib/components/services/Services.svelte"
   // import Contacts from "./lib/components/contacts/Contacts.svelte"
@@ -27,8 +27,7 @@
 </script>
 
 <main>
-  <h1>new start</h1>
-  <Form />
+  <Hero id="home"/>
   <!-- {#if showSecondaryNav}
     <SecondaryNavBar />
   {/if}

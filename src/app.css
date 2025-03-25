@@ -88,3 +88,37 @@ h1{
 li{
   list-style-type: none;
 }
+
+@media( width <= 26.875rem ){
+    :root{
+      --gap-sm:0.25rem;
+      --gap-md:0.5rem;
+      --gap-big:1rem;
+      --gap-xbig:1.2rem;
+
+
+      --font-sm: 0.875rem;
+      --linehieght-sm: calc(var(--font-sm) * 1.618);
+
+      --font-md: calc(var(--font-sm) * 1.618);
+      --linehieght-md: calc(var(--font-md) * 1.618);
+
+      --font-big: calc(var(--font-md) * 1.618);
+      --linehieght-big: calc(var(--font-big) * 1.618);
+
+      --font-xbig: calc(var(--font-big) * 1.618);
+      --linehieght-xbig: calc(var(--font-xbig) * 1.618);
+      
+      --border-rad:0.75rem
+    }
+
+
+    h1{
+      /* font-size: 2.118rem;
+      font-size: 3.8rem; */
+      font-size: 4.236rem;
+    }
+
+
+   
+}

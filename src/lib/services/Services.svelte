@@ -116,4 +116,22 @@
         top: 82%;
         left: -2%;
     }
+
+    @media( width <= 26.875rem ){
+        .card-container{
+            padding: calc(var(--gap-xbig) * 2);
+        }
+
+        .blue_red{
+            top: 2%;
+            right: 0%;
+            width: 30%;
+        }
+
+        .red{
+            top: 98%;
+            left: -2%;
+            width: 25%;
+        }
+    }
 </style>

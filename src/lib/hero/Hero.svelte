@@ -17,16 +17,19 @@
             As a trusted, family-owned business, we provide reliable and 
             professional plumbing solutions to meet all your need.
         </p>
-        <Button props={{
-            icon:massage_ic,
-            text:'Get a Free Estimate',
-            onClick: () => {
-                        const section = document.getElementById("contacts")
-                        if (section) {
-                            section.scrollIntoView({ behavior: 'smooth' })
+        <div class="button-wrapper">
+            <Button props={{
+                icon:massage_ic,
+                text:'Get a Free Estimate',
+                width: "100%",
+                onClick: () => {
+                            const section = document.getElementById("contacts")
+                            if (section) {
+                                section.scrollIntoView({ behavior: 'smooth' })
+                            }
                         }
-                    }
-            }}/>
+                }}/>
+        </div>
     </section>
     <section class="item-2">
         <img src={hero_svg} class="hero-svg" alt="hero-svg"/>
@@ -57,7 +60,7 @@
     }
 
     h1{
-        width: 721px;
+        width: 45.063rem;
         margin-bottom: calc(var(--gap-xbig));
     }
 
@@ -80,4 +83,57 @@
         font-weight: 500;
         letter-spacing: 0.08em;
     }
+
+    .button-wrapper{
+        width: 20rem;
+    }
+
+    
+    @media( width <= 26.875rem ){
+        main{
+            flex-direction: column-reverse;
+            padding:  calc(var(--gap-xbig) * 2);
+            justify-content: space-between;
+            gap: var(--gap-xbig);
+            height: 90vh;
+        }
+
+        .hero-svg{
+            width: 24.875rem ;
+        }
+
+        h1{
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 22rem;
+        }
+
+
+        .item-2{
+            padding-top: var(--gap-md);
+        }
+
+        p{
+            width: 22rem;
+        }
+
+        .button-wrapper{
+            width: 100%;
+
+        }
+
+        .blue{
+            top: 72%;
+            left: -1%;
+            width: 30%;
+        }
+
+        .red{
+            top: 92%;
+            right: 0%;
+            width: 22%;
+        }
+
+    }
+
 </style>

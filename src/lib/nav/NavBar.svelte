@@ -49,23 +49,20 @@
 </nav>
 
 <style>
+
     nav{
         display: flex;
         padding: var(--gap-md)  calc(var(--gap-xbig) * 2.5);
         justify-content: space-between;
-        /* position: sticky; 
-        top: 0;
-        z-index: 100;
-        background-color: white; */
-
     }
+
     ul{
         font-weight: 600;
         display: flex;
         gap: var(--gap-md);
         align-items: center;
-
     }
+
     li{
         font-size: var(--font-sm);
         letter-spacing: 0.39em;
@@ -77,6 +74,24 @@
         --underline_clr: var(--primary-fnt-clr);
         font-weight: 600;
         transition: all 0.3s;
+    }
+
+
+    @media( width <= 26.875rem ){
+        ul{
+            display: none;
+        }
+
+        
+        .logo{
+            width: 16rem;
+        }
+
+        nav{
+            display: flex;
+            padding: var(--gap-xbig);
+            justify-content: space-between;
+        }
 
     }
 

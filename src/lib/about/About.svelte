@@ -81,7 +81,7 @@
         line-height: var(--linehieght-md);
         letter-spacing: 0.08em;
         color: var(--secondery-fnt-clr);
-        width: 65rem;
+        max-width: 65rem;
     }
 
     .about-div p span{
@@ -91,7 +91,6 @@
     .blue{
         top: 12%;
         right: 12%;
-
     }
 
     .red{
@@ -99,6 +98,35 @@
         left: 2%;
     }
 
+
+    @media( width <= 26.875rem ){
+        .about-div p{
+            font-size: 1rem;
+            line-height: var(--linehieght-sm);
+        }  
+
+        .about-div {
+            padding: calc(var(--gap-xbig) * 2);
+        }
+
+
+        .red{
+            top: 87%;
+            left: -5%;
+            width: 30%;
+        }
+
+        .blue{
+            top: 19%;
+            right: 8%;
+            width: 12%;
+        }
+
+        .about-div img{
+            width: 100%;
+        }
+
+    }
 
 
 </style>

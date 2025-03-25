@@ -3,6 +3,7 @@
     import NavButton from '../bottons/navButton.svelte'
 
     let activeId = "home"
+    let open = true
 
     function scrollToSection(id) {
         const section = document.getElementById(id)
@@ -33,12 +34,11 @@
         onMount(() => {
         const options = {
             root: null,
-            threshold: 0.5,
+            threshold: 0.3,
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                const sectionId = entry.target.id;
                 if (entry.isIntersecting) {
                     entry.target.classList.forEach(_class => {
                         if(_class.includes("home")){
@@ -47,7 +47,7 @@
                         if(_class.includes("about")){
                             activeId = "about"
                         }
-                        if(_class.includes("services")){
+                        if(_class.includes("services-container")){
                             activeId = "services"
                         }
                         if(_class.includes("contacts")){
@@ -104,7 +104,9 @@
     </ul>
 </nav>
 
+
 <style>
+
     nav {
         position: fixed;
         top: var(--gap-sm);
@@ -122,9 +124,7 @@
     }
 
     ul {
-        display: flex;
-        /* gap: var(--gap-big); */
-        
+        display: flex;        
     }
 
     li {
@@ -133,7 +133,7 @@
         text-align: center;
         border-left: 1px solid rgb(149, 202, 233);
         background: rgba(255, 255, 255);
-
+        white-space: nowrap;
     }
 
 
@@ -152,8 +152,10 @@
 
     }
     li.active {
-        /* Add active styles here, if any */
-        /* filter: brightness(95%); */
         background: rgba(0, 152, 253, 0.226);
+    }
+
+    @media( width <= 26.875rem ){
+
     }
 </style>

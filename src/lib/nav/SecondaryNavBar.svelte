@@ -158,4 +158,8 @@
     @media( width <= 26.875rem ){
 
     }
+
+    nav :global(li.active > button){
+        color: var(--secondery-clr);
+    }
 </style>

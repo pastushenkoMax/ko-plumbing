@@ -1,7 +1,7 @@
 <script>
     import Button from "../bottons/button.svelte"
     import massage_ic from "../../assets/message_white.svg"
-    import hero_svg from "../../assets/hero.svg"
+    import hero_svg from "../../assets/hero_svg.svg"
     import cube_blue from "./cube_blue.svg"
     import cube_red from "./cube_red.svg"
 

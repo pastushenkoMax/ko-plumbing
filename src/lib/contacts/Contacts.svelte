@@ -70,14 +70,18 @@
         background: #ffffff;
         box-shadow: 20px 20px 60px #e8ecf0,
                     -2px -2px 40px #eff1f3;
-        max-width: 62rem;
-        margin: 0 auto;
-        margin-top: calc(var(--gap-xbig) * 2);
+        /* Keeps a gutter on both sides below 62rem instead of touching the edges. */
+        width: min(62rem, 100% - 2 * var(--gap-xbig));
+        margin: calc(var(--gap-xbig) * 2) auto 0;
     }
-    
+
     .contact-info-div section{
         display: flex;
         gap: var(--gap-sm);
+    }
+
+    .contact-info-div p{
+        overflow-wrap: anywhere;
     }
 
     .section-left,
@@ -111,7 +115,8 @@
     }
 
     .form_container{
-        width: 26.25rem;
+        width: 100%;
+        max-width: 26.25rem;
     }
 
     .blue{
@@ -126,19 +131,16 @@
     }
 
 
-    @media( width <= 26.875rem ){
+    /* Tablets and phones: stack the two halves of the card. */
+    @media( width <= 66rem ){
         .contacts-div{
             flex-direction: column-reverse;
-            margin: calc(var(--gap-xbig) * 2);
+            max-width: 40rem;
             box-shadow: 20px 20px 50px #e8ecf04b,
             -2px -2px 30px #eff1f32d,
             1px 1px 1px #e8ecf0,
             -2px -2px 1px #eff1f3
             ;
-        }  
-
-        .form_container{
-            width: 20.25rem;
         }
 
         .separator{
@@ -150,12 +152,12 @@
         }
 
         .section-right{
-            border-top-right-radius: var(--border-rad);
-            border-top-left-radius: var(--border-rad);
-            border-bottom-right-radius: none;
-            background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(219, 235, 245, 0.5) 70%, #DAEAF5 90%, #DAEAF5 100%);
+            /* Now the top half of the card: round the top corners only. */
+            border-radius: var(--border-rad) var(--border-rad) 0 0;
         }
+    }
 
+    @media( width <= 26.875rem ){
         .blue2{
             top: 70%;
             left: 0%;

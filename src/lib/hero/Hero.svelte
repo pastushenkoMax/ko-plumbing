@@ -41,11 +41,13 @@
 <style>
     main{
         display: flex;
-        padding:  calc(var(--gap-xbig) * 4);
+        padding: calc(var(--gap-xbig) * 4) clamp(1.2rem, 6vw, 8rem);
         justify-content: center;
         align-items: center;
-        align-items: top;
-        height: 82vh;
+        gap: var(--gap-xbig);
+        /* min-height, not height: wrapped text must be able to grow the hero
+           instead of spilling into the next section. */
+        min-height: 82vh;
         position: relative;
         overflow-y: visible;
     }
@@ -54,13 +56,14 @@
         display: flex;
         flex-direction: column;
         gap: var(--gap-xbig);
-        flex: 1;
+        flex: 1 1 0;
         height: fit-content;
         max-width: 87.5rem;
+        min-width: 0;
     }
 
     h1{
-        width: 45.063rem;
+        max-width: 45.063rem;
         margin-bottom: calc(var(--gap-xbig));
     }
 
@@ -76,52 +79,87 @@
 
     .item-2{
         padding-top: calc(var(--gap-xbig) * 2);
+        /* The illustration is detailed: give it ~60% of the row, not half. */
+        flex: 1.5 1 0;
+        min-width: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-svg{
+        width: 100%;
+        max-width: 52rem;
+        height: auto;
     }
 
     p{
-        width: 30rem;
+        max-width: 30rem;
         font-weight: 500;
         letter-spacing: 0.08em;
     }
 
     .button-wrapper{
-        width: 20rem;
+        width: 100%;
+        max-width: 20rem;
     }
 
-    
-    @media( width <= 26.875rem ){
+    /* Tablets (incl. 1024-1032px iPads) and phones: illustration on top, text
+       underneath, whole hero fits one screen below the logo bar. */
+    @media( width <= 66rem ){
         main{
+            /* One column width shared by illustration and text, growing with
+               the screen: ~670px on iPad Mini, ~790px on iPad Pro 13. */
+            --hero-col: min(100%, 30rem + 30vw);
             flex-direction: column-reverse;
-            padding:  calc(var(--gap-xbig) * 2);
-            justify-content: space-between;
-            gap: var(--gap-xbig);
-            height: 90vh;
+            padding: var(--gap-xbig) calc(var(--gap-xbig) * 2) calc(var(--gap-xbig) * 2);
+            justify-content: center;
+            /* Breathing room between illustration and text, scaled to the
+               screen height. */
+            gap: clamp(2rem, 5svh, 5rem);
+            min-height: calc(100svh - 6rem);
         }
 
-        .hero-svg{
-            width: 24.875rem ;
+        .item-1{
+            width: var(--hero-col);
+            max-width: none;
+            gap: var(--gap-big);
         }
 
         h1{
-            margin-top: auto;
-            margin-bottom: auto;
-            width: 22rem;
-        }
-
-
-        .item-2{
-            padding-top: var(--gap-md);
+            margin-bottom: 0;
+            font-size: clamp(3rem, 2rem + 6.5vw, 6rem);
         }
 
         p{
-            width: 22rem;
+            max-width: none;
+            font-size: clamp(1rem, 0.6rem + 1.2vw, 1.5rem);
+        }
+
+        /* Fills the shared column; the height cap keeps the whole hero on one
+           screen on shorter tablets. */
+        .hero-svg{
+            width: var(--hero-col);
+            max-width: 100%;
+            max-height: 44svh;
+            object-fit: contain;
+        }
+
+        /* Block, not flex: lets the image size purely from its height cap and
+           ratio instead of being stretched or shrunk as a flex item. */
+        .item-2{
+            display: block;
+            flex: none;
+            width: 100%;
+            text-align: center;
+            padding-top: 0;
         }
 
         .button-wrapper{
-            width: 100%;
-
+            max-width: none;
         }
+    }
 
+    @media( width <= 26.875rem ){
         .blue{
             top: 72%;
             left: -1%;

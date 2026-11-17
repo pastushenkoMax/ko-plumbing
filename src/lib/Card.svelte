@@ -41,7 +41,8 @@
         box-shadow: 20px 20px 60px #e8ecf0,
         -2px -2px 40px #eff1f3;
         
-        max-width: fit-content;
+        width: 100%;
+        max-width: 28rem;
         gap: var(--gap-xbig);
         
         background: #ffffff;
@@ -60,8 +61,10 @@
 
     .card img{
         /* flex: 1; */
-        height: 290px;
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        aspect-ratio: 320 / 290;
     }
 
     section{

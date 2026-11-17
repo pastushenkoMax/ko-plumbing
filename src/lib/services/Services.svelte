@@ -4,6 +4,7 @@
     import heater_service from "../../assets/heater_service.svg"
     import residential_service from "../../assets/residential_service.svg"
     import construction_service from "../../assets/construction_service.svg"
+    import winterizing_service from "../../assets/winterizing_service.svg"
     import cube_red_blue from "./cube_red_blue.svg"
     import cube_red from "./cube_red.svg"
 
@@ -31,10 +32,11 @@
         {
             image: heater_service,
             header: "Water Heaters",
-            text: `We provide installation of <span>boilers, water heaters, and furnaces,</span> 
-            ensuring your home stays warm and comfortable year-round. 
-            We are also handle <span>repairs for fireplaces and freeze breaks,</span>
-            keeping your heating systems running efficiently when you need them most`,
+            text: `We <span>install, service, repair, and replace boilers,
+            water heaters, and furnaces,</span> keeping your home warm and
+            comfortable year-round. Before the cold season arrives, we
+            <span>inspect and tune up your heating system</span> so it's ready
+            when temperatures drop. We also handle <span>freeze breaks,</span> so your heat keeps running when you need it most`,
             // text:`Installation Boilers, Water heaters and Furnaces. 
             //     Repair fireplaces, freeze breaks. 
             //     Winterize homes, clogged drains, freeze breaks, & fireplace`,
@@ -73,6 +75,18 @@
 
 
         },
+        {
+            image: winterizing_service,
+            header: "Home Winterizing",
+            text: `Leaving for the winter? We <span>shut down and drain your
+            water system</span> and protect your pipes and fixtures from
+            freezing, so you can close up your home with peace of mind.
+            When the warm season returns, we <span>reopen and prepare
+            your home for summer,</span> restoring water and
+            <span>checking for leaks</span> so everything is ready
+            when you are`,
+            link: "Schedule now"
+        }
     ]
 </script>
 
@@ -90,14 +104,34 @@
 <style>
     .card-container{
         gap: calc(var(--gap-xbig) * 2);
-        padding: calc(var(--gap-xbig) * 2) calc(var(--gap-xbig) * 5);
+        padding: calc(var(--gap-xbig) * 2) var(--page-gutter);
         padding-bottom: calc(var(--gap-xbig) * 12);
         background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(219, 235, 245, 0.5) 70%, #DAEAF5 90%, #DAEAF5 100%);
         box-shadow: 0 -1.25rem 1.25rem #DAEAF5;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* Adjust width dynamically */
+        /* Explicit column counts (below) instead of auto-fit, so the 4 cards
+           are always 1, 2 x 2 or 4 in a row, never 3 + 1 orphan. */
+        grid-template-columns: 1fr;
         align-items: stretch;
         place-items: center;
+    }
+
+    /* Tablets and laptops: 2 x 2. */
+    @media( 48rem <= width < 100rem ){
+        .card-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card-container > :global(.card){
+            max-width: none;
+        }
+    }
+
+    /* Wide screens: all four in one row. */
+    @media( width >= 100rem ){
+        .card-container{
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     

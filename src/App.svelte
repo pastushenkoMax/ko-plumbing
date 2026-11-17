@@ -6,6 +6,7 @@
   import About from "./lib/about/About.svelte"
   import Services from "./lib/services/Services.svelte"
   import Contacts from "./lib/contacts/Contacts.svelte"
+  import Footer from "./lib/footer/Footer.svelte"
 
   let showSecondaryNav = false
 
@@ -28,8 +29,9 @@
   </div>
   <About id="about"/>
   <Services id="services"/>
-  <Contacts id="contacts"/> 
+  <Contacts id="contacts"/>
 </main>
+<Footer/>
 
 <style>
   .top{
@@ -40,7 +42,8 @@
     display: none;
   }
 
-  @media( width <= 26.875rem ){
+  /* Tablets and phones: hamburger menu instead of the two desktop navs. */
+  @media( width <= 66rem ){
     .second-nav-wrapper{
       display: none;
     }

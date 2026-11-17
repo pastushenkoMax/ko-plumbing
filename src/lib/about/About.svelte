@@ -19,7 +19,7 @@
         <img src={tools} class="svg" alt="tools"/>
         <p>
             <span>
-                With over 27 years of 
+                With nearly 30 years of 
                 experience in the plumbing industry,
             </span> 
             we bring unmatched expertise to every job. 
@@ -66,7 +66,7 @@
         justify-content: center;
         align-items: center;
         gap: calc(var(--gap-xbig) * 2);
-        padding-top: calc(var(--gap-xbig) * 2);
+        padding: calc(var(--gap-xbig) * 2) var(--page-gutter) 0;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(219, 235, 245, 0.5) 70%, #DAEAF5 90%, #DAEAF5 100%);
         box-shadow: 0 -1.25rem 1.25rem #DAEAF5;
     }
@@ -77,8 +77,8 @@
 
     .about-div p{
         font-weight: 900;
-        font-size: 1.75rem;
-        line-height: var(--linehieght-md);
+        font-size: clamp(1rem, 0.75rem + 1.1vw, 1.75rem);
+        line-height: 1.65;
         letter-spacing: 0.08em;
         color: var(--secondery-fnt-clr);
         max-width: 65rem;
@@ -100,11 +100,6 @@
 
 
     @media( width <= 26.875rem ){
-        .about-div p{
-            font-size: 1rem;
-            line-height: var(--linehieght-sm);
-        }  
-
         .about-div {
             padding: calc(var(--gap-xbig) * 2);
         }

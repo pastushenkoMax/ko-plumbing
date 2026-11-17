@@ -23,7 +23,7 @@
     }
 
     section{
-        padding: 0  calc(var(--gap-xbig) * 2.5);
+        padding: 0 var(--page-gutter);
         padding-top: calc(var(--gap-xbig) * 1);
         padding-bottom: calc(var(--gap-big) * 2);
 

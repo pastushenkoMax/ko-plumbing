@@ -1,8 +1,12 @@
 :root{
-  --gap-sm:0.5rem;
-  --gap-md:1rem;
-  --gap-big:1.5rem;
-  --gap-xbig:2rem;
+  /* Fluid tokens: scale smoothly from phone (~375px) to desktop (~1440px). */
+  --gap-sm: clamp(0.25rem, 0.15rem + 0.4vw, 0.5rem);
+  --gap-md: clamp(0.5rem, 0.3rem + 0.8vw, 1rem);
+  --gap-big: clamp(1rem, 0.85rem + 0.6vw, 1.5rem);
+  --gap-xbig: clamp(1.2rem, 0.9rem + 1.2vw, 2rem);
+
+  /* Side padding for page content. */
+  --page-gutter: clamp(1.2rem, 5vw, 5rem);
 
   --accent-clr:#F66232;
   --secondery-clr:#51A3E1;
@@ -10,7 +14,7 @@
   --secondery-fnt-clr:#787878;
 
 
-  --font-sm: 1.125rem;
+  --font-sm: clamp(0.875rem, 0.75rem + 0.5vw, 1.125rem);
   --linehieght-sm: calc(var(--font-sm) * 1.618);
 
   --font-md: calc(var(--font-sm) * 1.618);
@@ -21,12 +25,23 @@
 
   --font-xbig: calc(var(--font-big) * 1.618);
   --linehieght-xbig: calc(var(--font-xbig) * 1.618);
-  
+
   --border-rad:0.75rem
 }
 
 html{
   scroll-behavior: smooth;
+}
+
+/* Decorative cubes sit partly off-screen; clip them instead of letting the
+   page scroll sideways. `clip` (not `hidden`) keeps position: fixed working. */
+html,
+body{
+  overflow-x: clip;
+}
+
+img{
+  max-width: 100%;
 }
 
 * {
@@ -79,7 +94,7 @@ h2{
 
 h1{
 
-  font-size: var(--font-xbig);
+  font-size: clamp(3rem, 2rem + 6vw, 4.75rem);
   line-height: 0.9;
   padding-bottom: var(--gap-sm);
   font-weight: 900;
@@ -87,38 +102,4 @@ h1{
 
 li{
   list-style-type: none;
-}
-
-@media( width <= 26.875rem ){
-    :root{
-      --gap-sm:0.25rem;
-      --gap-md:0.5rem;
-      --gap-big:1rem;
-      --gap-xbig:1.2rem;
-
-
-      --font-sm: 0.875rem;
-      --linehieght-sm: calc(var(--font-sm) * 1.618);
-
-      --font-md: calc(var(--font-sm) * 1.618);
-      --linehieght-md: calc(var(--font-md) * 1.618);
-
-      --font-big: calc(var(--font-md) * 1.618);
-      --linehieght-big: calc(var(--font-big) * 1.618);
-
-      --font-xbig: calc(var(--font-big) * 1.618);
-      --linehieght-xbig: calc(var(--font-xbig) * 1.618);
-      
-      --border-rad:0.75rem
-    }
-
-
-    h1{
-      /* font-size: 2.118rem;
-      font-size: 3.8rem; */
-      font-size: 4.236rem;
-    }
-
-
-   
 }

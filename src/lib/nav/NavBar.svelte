@@ -52,8 +52,9 @@
 
     nav{
         display: flex;
-        padding: var(--gap-md)  calc(var(--gap-xbig) * 2.5);
+        padding: var(--gap-md) var(--page-gutter);
         justify-content: space-between;
+        align-items: center;
     }
 
     ul{
@@ -77,22 +78,20 @@
     }
 
 
-    @media( width <= 26.875rem ){
+    /* The hamburger menu (MobileDiviceNav) takes over at this width. */
+    @media( width <= 66rem ){
         ul{
             display: none;
         }
 
-        
         .logo{
             width: 16rem;
+            max-width: 65vw;
         }
 
         nav{
-            display: flex;
             padding: var(--gap-xbig);
-            justify-content: space-between;
         }
-
     }
 
 </style>

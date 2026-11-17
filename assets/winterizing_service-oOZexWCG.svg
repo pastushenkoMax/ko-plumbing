@@ -1,0 +1,180 @@
+<svg width="260" height="300" viewBox="0 0 260 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<!-- ===== Snowy ground ===== -->
+<ellipse cx="136" cy="216" rx="124" ry="62" fill="#FFFFFF" fill-opacity="0.6"/>
+<ellipse cx="136" cy="216" rx="108" ry="53" fill="#FFFFFF"/>
+
+<!-- ===== Summer: sun ===== -->
+<g stroke="#FFBB7D" stroke-width="3" stroke-linecap="round">
+  <line x1="38" y1="44" x2="38" y2="36"/>
+  <line x1="38" y1="80" x2="38" y2="88"/>
+  <line x1="20" y1="62" x2="12" y2="62"/>
+  <line x1="56" y1="62" x2="64" y2="62"/>
+  <line x1="25.3" y1="49.3" x2="19.6" y2="43.6"/>
+  <line x1="50.7" y1="74.7" x2="56.4" y2="80.4"/>
+  <line x1="50.7" y1="49.3" x2="56.4" y2="43.6"/>
+  <line x1="25.3" y1="74.7" x2="19.6" y2="80.4"/>
+</g>
+<circle cx="38" cy="62" r="13" fill="#FFBB7D"/>
+<circle cx="38" cy="62" r="13" fill="#F66232" fill-opacity="0.35"/>
+
+<!-- ===== Winter: snowflakes ===== -->
+<g stroke="#516A96" stroke-width="2.5" stroke-linecap="round">
+  <line x1="226" y1="40" x2="226" y2="72"/>
+  <line x1="212.1" y1="48" x2="239.9" y2="64"/>
+  <line x1="212.1" y1="64" x2="239.9" y2="48"/>
+  <line x1="221" y1="43" x2="226" y2="48"/>
+  <line x1="231" y1="43" x2="226" y2="48"/>
+  <line x1="221" y1="69" x2="226" y2="64"/>
+  <line x1="231" y1="69" x2="226" y2="64"/>
+</g>
+<g stroke="#97A7C1" stroke-width="2" stroke-linecap="round">
+  <line x1="244" y1="98" x2="244" y2="114"/>
+  <line x1="237.1" y1="102" x2="250.9" y2="110"/>
+  <line x1="237.1" y1="110" x2="250.9" y2="102"/>
+  <line x1="30" y1="122" x2="30" y2="134"/>
+  <line x1="24.8" y1="125" x2="35.2" y2="131"/>
+  <line x1="24.8" y1="131" x2="35.2" y2="125"/>
+</g>
+
+<!-- ===== Left wall + gable (shade side) ===== -->
+<path d="M124 236 L61.6 200 L61.6 130 L92.8 102 L124 166 Z" fill="#B2B2B2"/>
+<!-- siding -->
+<g stroke="#A3A3A3" stroke-width="0.8">
+  <line x1="124" y1="220" x2="61.6" y2="184"/>
+  <line x1="124" y1="211" x2="61.6" y2="175"/>
+  <line x1="124" y1="202" x2="61.6" y2="166"/>
+  <line x1="124" y1="193" x2="61.6" y2="157"/>
+  <line x1="124" y1="184" x2="61.6" y2="148"/>
+  <line x1="124" y1="175" x2="61.6" y2="139"/>
+</g>
+<!-- foundation -->
+<path d="M124 236 L61.6 200 L61.6 192 L124 228 Z" fill="#878787"/>
+<g stroke="#706F6F" stroke-width="0.8">
+  <line x1="108.4" y1="227" x2="108.4" y2="219"/>
+  <line x1="92.8" y1="218" x2="92.8" y2="210"/>
+  <line x1="77.2" y1="209" x2="77.2" y2="201"/>
+</g>
+<!-- attic vent -->
+<ellipse cx="92.8" cy="128" rx="6.5" ry="7.5" fill="#EDEDED"/>
+<ellipse cx="92.8" cy="128" rx="5" ry="6" fill="#706F6F"/>
+<g stroke="#9D9D9C" stroke-width="1">
+  <line x1="88.5" y1="125" x2="97.1" y2="125"/>
+  <line x1="88" y1="128" x2="97.6" y2="128"/>
+  <line x1="88.5" y1="131" x2="97.1" y2="131"/>
+</g>
+<!-- left window: trim, glass, mullions -->
+<path d="M104.9 203 L80.7 189 L80.7 159 L104.9 173 Z" fill="#F2F2F2"/>
+<path d="M103.2 200 L82.4 188 L82.4 162 L103.2 174 Z" fill="#7F92B0"/>
+<path d="M103.2 174 L96 169.8 L103.2 186 Z" fill="#FFFFFF" fill-opacity="0.25"/>
+<line x1="92.8" y1="194" x2="92.8" y2="168" stroke="#F2F2F2" stroke-width="1.6"/>
+<line x1="103.2" y1="187" x2="82.4" y2="175" stroke="#F2F2F2" stroke-width="1.6"/>
+<!-- left sill with snow -->
+<path d="M106.7 204 L79 188 L76.4 189.5 L104.1 205.5 Z" fill="#DADADA"/>
+<path d="M106.9 202.6 L79 186.6 L76.2 188.3 Q90 194 104 204.4 Z" fill="#FFFFFF"/>
+
+<!-- ===== Right wall (lit side) ===== -->
+<path d="M124 236 L210.6 186 L210.6 116 L124 166 Z" fill="#DADADA"/>
+<!-- siding -->
+<g stroke="#CCCCCC" stroke-width="0.8">
+  <line x1="124" y1="220" x2="210.6" y2="170"/>
+  <line x1="124" y1="211" x2="210.6" y2="161"/>
+  <line x1="124" y1="202" x2="210.6" y2="152"/>
+  <line x1="124" y1="193" x2="210.6" y2="143"/>
+  <line x1="124" y1="184" x2="210.6" y2="134"/>
+  <line x1="124" y1="175" x2="210.6" y2="125"/>
+</g>
+<!-- shadow under the eave -->
+<path d="M124 166 L210.6 116 L210.6 124 L124 174 Z" fill="#C6C6C6"/>
+<!-- foundation -->
+<path d="M124 236 L210.6 186 L210.6 178 L124 228 Z" fill="#9D9D9C"/>
+<g stroke="#878787" stroke-width="0.8">
+  <line x1="141.3" y1="226" x2="141.3" y2="218"/>
+  <line x1="158.6" y1="216" x2="158.6" y2="208"/>
+  <line x1="175.9" y1="206" x2="175.9" y2="198"/>
+  <line x1="193.3" y1="196" x2="193.3" y2="188"/>
+</g>
+<!-- right window: trim, glass, mullions -->
+<path d="M134.4 208 L160.4 193 L160.4 163 L134.4 178 Z" fill="#F7F7F7"/>
+<path d="M136.1 205 L158.6 192 L158.6 166 L136.1 179 Z" fill="#97A7C1"/>
+<path d="M136.1 179 L146 173.3 L136.1 192 Z" fill="#FFFFFF" fill-opacity="0.4"/>
+<path d="M150 188 L158.6 183 L158.6 176 L153 179.3 Z" fill="#FFFFFF" fill-opacity="0.18"/>
+<line x1="147.4" y1="198.5" x2="147.4" y2="172.5" stroke="#F7F7F7" stroke-width="1.6"/>
+<line x1="136.1" y1="192" x2="158.6" y2="179" stroke="#F7F7F7" stroke-width="1.6"/>
+<!-- right sill with snow -->
+<path d="M132.7 209 L162.1 192 L164.7 193.5 L135.3 210.5 Z" fill="#C6C6C6"/>
+<path d="M132.5 207.6 L162.3 190.6 L165 192.2 Q150 199 135.3 209.2 Z" fill="#FFFFFF"/>
+
+<!-- door: trim, door, panels, knob -->
+<path d="M176 206 L193.3 196 L193.3 149 L176 159 Z" fill="#F7F7F7"/>
+<path d="M177.7 205 L191.5 197 L191.5 152 L177.7 160 Z" fill="#706F6F"/>
+<path d="M179.4 180 L189.8 174 L189.8 156 L179.4 162 Z" fill="#878787"/>
+<path d="M179.4 201 L189.8 195 L189.8 179 L179.4 185 Z" fill="#878787"/>
+<circle cx="188.6" cy="182" r="1.3" fill="#DADADA"/>
+
+<!-- step with snow -->
+<path d="M181.1 204 L201.9 192 L201.9 199 L181.1 211 Z" fill="#9D9D9C"/>
+<path d="M174.2 200 L181.1 204 L181.1 211 L174.2 207 Z" fill="#878787"/>
+<path d="M174.2 200 L195 188 L201.9 192 L181.1 204 Z" fill="#EDEDED"/>
+<path d="M174 199.5 L195 187.4 L202.3 191.6 Q192 196 181.3 203.8 Q177 202.5 174 199.5 Z" fill="#FFFFFF"/>
+
+<!-- outdoor faucet with insulated winter cover -->
+<path d="M129.5 222 L129.5 236" stroke="#878787" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M125.5 212.6 L133.5 208 L133.5 218.6 L125.5 223.2 Z" fill="#516A96"/>
+<path d="M133.5 208 L137 210 L137 220.6 L133.5 218.6 Z" fill="#3E5480"/>
+<path d="M125.5 212.6 L133.5 208 L137 210 L129 214.6 Z" fill="#97A7C1"/>
+
+<!-- snow drifts against the walls -->
+<path d="M61.6 200 Q70 194 78 199 Q86 196 94 203 Q103 200 110 208 Q117 207 124 214 L124 236 Z" fill="#FFFFFF"/>
+<path d="M124 236 L124 230 Q131 224 140 227 Q148 221 157 222 Q165 216 172 214 L174 207 L181.1 211 L201.9 199 L204 196 Q207 190 210.6 190 L210.6 186 Z" fill="#FFFFFF"/>
+
+<!-- ===== Roof ===== -->
+<!-- left verge (front edge of the roof), with thickness -->
+<path d="M87.6 105 L122.5 176.7 L122.5 181.7 L87.6 110 Z" fill="#3C3C3B"/>
+<path d="M87.6 105 L52.7 136.4 L52.7 141.4 L87.6 110 Z" fill="#1D1D1B"/>
+<!-- snow cap on the far verge -->
+<path d="M87.6 102.5 L52 135 L51 138.5 Q58 133 66 127 Q76 117 87.6 107 Z" fill="#FFFFFF"/>
+<!-- fascia along the front eave -->
+<path d="M122.5 176.7 L219.5 120.7 L219.5 125.7 L122.5 181.7 Z" fill="#3C3C3B"/>
+<!-- near roof slope, snow covered -->
+<path d="M122.5 176.7 L219.5 120.7 L184.6 49 L87.6 105 Z" fill="#FFFFFF"/>
+<!-- snow lip hanging over the fascia -->
+<path d="M121.5 175.5 L220.3 118.5 L220.5 123 Q213 131.4 206.5 129.7 Q200 139 193.5 137.2 Q187 146.5 180.5 144.7 Q174 154 167.5 152.2 Q161 161.5 154.5 159.7 Q148 169 141.5 167.2 Q135 176.5 128 175 Q124 181 121.5 180 Z" fill="#FFFFFF"/>
+<!-- soft shading on the snow so the roof reads as a surface -->
+<path d="M87.6 105 L184.6 49 L188 56 L91 112 Z" fill="#EDEDED"/>
+<!-- ridge highlight -->
+<line x1="87.6" y1="105" x2="184.6" y2="49" stroke="#DADADA" stroke-width="1.2"/>
+
+<!-- icicles -->
+<g fill="#C8E2F4">
+  <path d="M131 178.5 L134.4 176.5 L132.4 186 Z"/>
+  <path d="M143.6 171.2 L147 169.2 L145.2 182 Z"/>
+  <path d="M156.2 163.9 L159.6 161.9 L157.7 171 Z"/>
+  <path d="M168.8 156.6 L172.2 154.6 L170.4 168 Z"/>
+  <path d="M181.4 149.3 L184.8 147.3 L183 156 Z"/>
+  <path d="M194 142 L197.4 140 L195.6 152 Z"/>
+  <path d="M206.6 134.7 L210 132.7 L208.2 141 Z"/>
+</g>
+
+<!-- ===== Brick chimney ===== -->
+<path d="M162.8 58 L154.1 53 L154.1 74.2 L162.8 92 Z" fill="#71433D"/>
+<path d="M162.8 58 L173.2 52 L173.2 86 L162.8 92 Z" fill="#B54825"/>
+<g stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="0.8">
+  <line x1="162.8" y1="66" x2="173.2" y2="60"/>
+  <line x1="162.8" y1="74" x2="173.2" y2="68"/>
+  <line x1="162.8" y1="82" x2="173.2" y2="76"/>
+  <line x1="168" y1="63" x2="168" y2="71"/>
+  <line x1="168" y1="79" x2="168" y2="87"/>
+  <line x1="154.1" y1="61" x2="162.8" y2="66"/>
+  <line x1="154.1" y1="69" x2="162.8" y2="74"/>
+</g>
+<!-- cap -->
+<path d="M152.4 52 L162.8 58 L174.9 51 L164.5 45 Z" fill="#3C3C3B"/>
+<path d="M152.4 52 L162.8 58 L162.8 60.5 L152.4 54.5 Z" fill="#1D1D1B"/>
+<path d="M162.8 58 L174.9 51 L174.9 53.5 L162.8 60.5 Z" fill="#3C3C3B"/>
+<!-- snow on cap -->
+<path d="M152 51.5 L164.5 44.2 L175.4 50.6 L163 57.8 Q157 56 152 51.5 Z" fill="#FFFFFF"/>
+<!-- snow piled at chimney base -->
+<path d="M152 74 Q158 80 162.8 90 Q168 86 175 86.5 Q172 92 162.8 95 Q156 86 152 74 Z" fill="#FFFFFF"/>
+
+</svg>
